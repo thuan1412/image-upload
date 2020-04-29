@@ -1,0 +1,59 @@
+.home-container {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex;
+
+  .add-btn {
+    margin: 30px auto;
+    width: 150px;
+    background-color: greenyellow;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: white;
+      border: 1px solid yellowgreen;
+    }
+  }
+
+  .detail-photos {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+
+    th, td {
+      border: 1px solid black;
+    }
+    img {
+      height: 150px;
+      width: auto;
+      margin: 10px auto;
+    }
+    .header {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .id {
+      width: 5%;
+    }
+    .photo {
+      width: 45%;
+    }
+    .description {
+      width: 20%;
+    }
+    .name {
+      width: 10%;
+    }
+    .edit,
+    .delete {
+      width: 10%;
+    }
+  }
+}
