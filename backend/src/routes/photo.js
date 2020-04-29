@@ -20,14 +20,8 @@ const upload = multer({
 // list all images
 router.get("/", async (req, res) => {
   const photos = await models.Photo.findAll();
-  res.json(photos);
+  res.json({ photos: photos });
 });
-
-router.get("/add", async (req, res) => {
-  const photos = await models.Photo.findAll();
-  res.json(photos);
-});
-
 
 // upload image
 router.post("/add", upload.single("photo"), async (req, res) => {
